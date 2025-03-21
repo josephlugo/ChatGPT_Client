@@ -24,6 +24,12 @@ public partial class UserMessageItemTemplate : Grid
     {
         var borderText = (Border)sender;
 
+        //check if the _parentGrid is null
+        if (_parentGrid == null)
+        {
+            return;
+        }
+
         var widthMaxBorderText = _parentGrid.Width - 45;
 
         if (borderText.Width > widthMaxBorderText)

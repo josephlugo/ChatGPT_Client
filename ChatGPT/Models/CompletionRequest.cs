@@ -5,7 +5,7 @@ namespace ChatGPT.Models
 	public class CompletionRequest
 	{
 		[JsonPropertyName("model")]
-		public string Model { get; set; } = "text-davinci-003";
+		public string Model { get; set; } = "davinci-002";
 
 		[JsonPropertyName("prompt")]
 		public string Prompt { get; set; }
